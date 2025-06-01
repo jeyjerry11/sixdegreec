@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Information</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .info-item {
+            margin-bottom: 10px;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .info-item:last-child {
+            border-bottom: none;
+        }
+        .label {
+            font-weight: bold;
+            color: #555;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .value {
+            color: #333;
+        }
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .donation-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .wallet-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .wallet-label {
+            margin-right: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+        .wallet-address {
+            font-family: monospace;
+            color: #333;
+            margin-right: 10px;
+        }
+        .copy-icon {
+            cursor: pointer;
+            /* You might need to provide a path to a copy icon image */
+            /* For example: background-image: url('copy-icon.png'); */
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .wallet-name {
+            color: #777;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p><strong>To get invole and be apart of shareing kindness to the world please
+             contact us with the information below.</strong> </p>
+        <h2>Contact Information</h2>
+        
+        <div class="info-item">
+            <span class="label">Email Address:</span>
+            <span class="value">Jerrysamuel85@gmail.com</span>
+        </div>
+        <div class="info-item">
+            <span class="label">Phone Number:</span>
+            <span class="value">+2347086312481</span>
+        </div>
+        <div class="info-item">
+            <span class="label">Social media page:</span>
+            <span class="value">Facebook:https://accountscenter.facebook.com/profiles/61551098815734
+            
+                <br>Whatsapp:+2347086312481
+
+
+            
+            </span>
+        </div>
+        <div class="info-item">
+            <span class
+<div class="donation-container">
+        <h1>Donate from your Bitcoin App</h1>
+        <p>CLICK WHITE BOX TO Copy wallet address.</p>
+        <div class="wallet-info">
+            <span class="wallet-label">Wallet address:</span>
+            <span class="wallet-address">1LGRJ9fexBgmoRBCFLYceActNwxoovJmvK</span>
+            <span class="copy-icon" title="Copy to clipboard" onclick="copyAddress()"></span>
+        </div>
+        <p class="wallet-name">Scarn Wallet</p>
+        </div>
+
+    <script>
+        function copyAddress() {
+            const addressElement = document.querySelector('.wallet-address');
+            const textArea = document.createElement("textarea");
+            textArea.value = addressElement.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("Wallet address copied to clipboard!");
+        }
+    </script>
